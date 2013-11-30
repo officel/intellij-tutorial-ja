@@ -1,0 +1,100 @@
+# IntelliJ IDEA Tutorial Ja - Emmet  -
+
+## はじめに
+
+* IntelliJ IDEA でHTMLマークアップを爆速にして自慢するためのチュートリアルです。
+* 正式な書き方とか本来のEmmet(Zen Coding)について、よりも、IDEA上でどれだけ早く書けるようになるか、を中心にしています。
+* でもまぁ取り合えず http://emmet.io は見た方がいいです。
+* エディタのマークの都合でファイルの拡張子が .html になっていますが、中はマークダウンです。
+
+## 基本
+
+* エディタ操作：文字列の選択は Ctrl + W (MacはCmd+W)
+* エディタ操作：元に戻すには Ctrl + Z (MacはCmd+Z)
+
+* エディタのmarkがHTML等（エディタタブのマークがh）の場合にTabで発動
+** 要素を打って Tab（以下Tabは省略）
+** 例: div <- vの後ろで[tab]
+
+* 要素内の文字列は {}
+** 例: p{文字列}
+
+* IDは #
+** 例: p#id_name
+
+* classは .
+** 例: p.class_name
+
+* その他のアトリビュートは []
+** 例: td[colspan=3 title="タイトル"]
+
+* 子要素は >
+** 例: ul>li
+
+* 兄弟要素は +
+** div.header+div.main+div.side+div.footer
+
+* 繰り返しは *
+** 例: ul>li*5
+
+* 一つ上に上がるのは ^ (2つ上がるには^^)
+** 例: table>tr>th^tr>td
+
+* グルーピングは ()
+** 例: dl>(dt+dd)*3
+
+* 要素の前後関係を補完できる（省略記法）
+** 何もないとdiv -> #main
+** ulの子要素はli -> ul>.items*4
+** table系はtd -> tr>.col*4
+** などなど
+** ちなみに繰り返しの手前では省略が効かないことも
+
+* まとめ（例が下手だな、、、ｗ）
+** body>#main>#contents>(.row{rows}*3+table>tr>th{#}+th{KEY}+th{VALUE}^(tr>td*3)*4)^#sidebar>ul>li*3>a
+
+
+## 次の段階
+
+* 要素を削除するには 要素内で (Macは Cmd+Shift+Backspace(Fn+Delete))
+** 例: <p><span>span text</span><em>em text</em></p>
+
+* 特定の要素にはデフォルトのアトリビュートが設定されている
+** 例: link
+** 例: img
+
+* 特定の要素にはデフォルトのエイリアス（ショートカット）が設定されている
+** 例: html:5
+
+
+## エディタ操作と併用
+
+* Emmet では snipetts.json で定義を追加できることになっている
+* IntelliJ ではこれは Live Templates (Settings | IDE Settings | Live Templates) で変更できる
+
+
+* 選択した文字列を囲む
+** 文字列をpで囲む
+*** Cmd+W で選択して Alt+Cmd+T(Surround With) から T でも E でも
+
+* コメント
+** Cmd + /
+
+
+## 開いてみよう
+
+table>thead>tr>th{#}+th{name}+th{value}^^tbody>tr*5>td{$}+td*2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
