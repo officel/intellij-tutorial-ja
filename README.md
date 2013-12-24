@@ -12,6 +12,7 @@
 3. Emmet.html - Emmet (Zen Coding) について
 4. plugin/SexyEditor エディタ部分に画像を表示できる Sexy Editor プラグインについて
 5. plugin/IDEtalk IDE内部でチャットができる IDEtalkプラグインについて
+6. plugin/Presentation Assistant キーボードショートカットとコマンドを表示するプレゼンテーションアシスタントプラグインについて
 
 
 ## 作業中
