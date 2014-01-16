@@ -13,7 +13,7 @@
 4. plugin/SexyEditor エディタ部分に画像を表示できる Sexy Editor プラグインについて
 5. plugin/IDEtalk IDE内部でチャットができる IDEtalkプラグインについて
 6. plugin/Presentation Assistant キーボードショートカットとコマンドを表示するプレゼンテーションアシスタントプラグインについて
-
+7. settings/TODO.md TODO の設定
 
 ## 作業中
 
