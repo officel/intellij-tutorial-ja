@@ -11,3 +11,12 @@
 * PHP : 設定の PHP の項について
 
 
+
+## さくっとメモ
+
+* PHPUnit
+    * PHPUnit でテストコードを書くと、PHPUnit_Framework_TestCase などが黄色になる
+    * PHPUnit のパスが伝わってないのが原因
+        * File - Settings - Project Setting - PHP の Include Path に PHPUnit のあるPATHを追加
+        * Windows で XAMPP なら C:\xampp\php\pear など。
+
