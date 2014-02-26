@@ -20,3 +20,7 @@
         * File - Settings - Project Setting - PHP の Include Path に PHPUnit のあるPATHを追加
         * Windows で XAMPP なら C:\xampp\php\pear など。
 
+
+* if (true) func(); 的なコードを修正したい時
+    * func(); 部分を CTRL + w 等で選択しておいて、CTRL+ALT+Tで Surround with で{}を選択
+    * コードフォーマットの設定（Settings - Code Style - PHP - Wrapping and Braces - if() statement - Force braces を Always に）
